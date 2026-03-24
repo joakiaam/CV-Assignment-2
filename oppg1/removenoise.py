@@ -13,4 +13,3 @@ def denoise():
     cv2.imwrite(img_src + "cv_denoised_salt_pepper.bmp", cv_denoised_salt_pepper)
 
 if __name__ == "__main__":    denoise()
-

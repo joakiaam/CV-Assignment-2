@@ -39,11 +39,11 @@ def apply_salt_and_pepper_noise(image, salt_prob, pepper_prob):
 
     return noisy_image
 
-def main():
+def apply_noise():
     image = cv2.imread('../src/Task1_CV.bmp')
     salt_and_pepper = apply_salt_and_pepper_noise(image, 0.01, 0.01)
     cv2.imwrite('../out/oppg1/salt_pepper.bmp', salt_and_pepper)
     noisy_image = apply_gaussion_noise(image)
     cv2.imwrite('../out/oppg1/gaussion_noise.bmp', noisy_image)
 
-if __name__ == "__main__":    main()
+if __name__ == "__main__":    apply_noise()
