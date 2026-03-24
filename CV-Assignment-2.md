@@ -20,11 +20,8 @@ Repository: [https://github.com/joakiaam/CV-Assignment-2](https://github.com/joa
 
 ## Task 2: Image Segmentation Analysis (Before and After Noise)
 
-### Methodology
-We use **K-means clustering** (k=5) to segment the original image and compare it with the same image after noise.
-For Task 2, the noisy images are reused from Task 1 outputs:
-- `out/oppg1/gaussion_noise.bmp`
-- `out/oppg1/salt_pepper.bmp`
+### Method
+**K-means clustering** (k=5) was used to segment the original image and compare it with the same image after noise.
 
 ### Segmentation Results
 
@@ -42,7 +39,7 @@ For Task 2, the noisy images are reused from Task 1 outputs:
 
 ### Quantitative Analysis
 
-Segmentation quality is measured using **Within-Cluster Sum of Squares (WCSS)** - lower values indicate more compact and homogeneous clusters:
+Segmentation quality is measured using **Within-Cluster Sum of Squares (WCSS)** a lower value indicate more compact and homogeneous clusters:
 
 | Image Type          | WCSS        | Degradation |
 |---------------------|-------------|-------------|
@@ -63,8 +60,6 @@ Segmentation quality is measured using **Within-Cluster Sum of Squares (WCSS)** 
 - A denoising step before segmentation gives more stable and cleaner regions.
 
 ### Conclusion
-K-means segmentation quality drops for both noise types (about **32-34%** higher WCSS). Reusing Task 1 noisy images in Task 2 confirms the same conclusion: **denoising before segmentation is important**.
-
-Run order for reproducibility: Task 1 (`oppg1/applynoise.py`) first, then Task 2 (`oppg2/segmentation.py`).
-
-For detailed analysis, see [oppg2/ANALYSIS.md](oppg2/ANALYSIS.md)
+K-means segmentation quality drops for both noise types (about **32-34%** higher WCSS).
+Having an image with noise leads to less accurate segmentation, 
+so for better segmentation results, it is crucial to have an image with as little noise as possible.
