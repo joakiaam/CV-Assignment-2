@@ -19,14 +19,13 @@ detection.
 ```
 .
 ├── CV-Assignment-2.md
+├── CV-Assignment-2.pdf
 ├── README.md
 ├── oppg1
 │   ├── applynoise.py
 │   ├── evaluate.py
 │   └── removenoise.py
 ├── oppg2
-│   ├── ANALYSIS.md
-│   ├── README.md
 │   └── segmentation.py
 ├── out
 │   ├── oppg1
